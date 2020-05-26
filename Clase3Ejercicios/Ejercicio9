@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+void main(){
+	int numeros[4];
+	int suma=0;
+	float promedio;
+	
+	int i=1;
+	for(i=1;i<5;i++){
+		printf("ingrese el numero %i ",i);
+		scanf("%i",&numeros[i-1]);
+		suma=suma+numeros[i-1];	
+	}
+	
+	promedio=suma/4;	
+	
+	printf("El promedio es de %f",promedio);
+}
