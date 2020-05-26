@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+void main(){
+	float dias;
+	float horas;
+	float minutos;
+	float segundos;
+	
+	printf("Ingrese el número de días ");
+	scanf("%f",&dias);
+	printf("Ingrese el número de horas ");
+	scanf("%f",&horas);
+	printf("Ingrese el número de minutos ");
+	scanf("%f",&minutos);
+	
+	segundos=dias*86400+horas*3600+minutos*60;	
+	
+	printf("La cantidad total de segundos es de %f",segundos);
+}
