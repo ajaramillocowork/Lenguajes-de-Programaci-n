@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+
+void main(){
+	float a;
+	float b;
+	float c;
+	float x1;
+	float x2;
+	
+	printf("Ingrese el coeficiente a ");
+	scanf("%f",&a);
+	printf("Ingrese el coeficiente b ");
+	scanf("%f",&b);
+	printf("Ingrese el coeficiente c ");
+	scanf("%f",&c);
+	
+	x1=(-b+sqrt(pow(b,2)-4*a*c))/(2*a);
+	x2=(-b-sqrt(pow(b,2)-4*a*c))/(2*a);		
+	
+	printf("Los valores de X son %f y %f",x1,x2);
+}
