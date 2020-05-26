@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+void main(){
+	float r1;
+	float r2;
+	float rEquiv;
+	
+	printf("Ingrese la resistencia 1 ");
+	scanf("%f",&r1);
+	printf("Ingrese la resistencia 2 ");
+	scanf("%f",&r2);
+	
+	rEquiv=(r1*r2)/(r1+r2);		
+	
+	printf("La resistencia equivalente es de %f",rEquiv);
+}
