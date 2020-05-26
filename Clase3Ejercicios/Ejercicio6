@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+void main(){
+	float dias;
+	float horas;
+	float minutos;
+	float segundos;
+	float resto;
+	
+	printf("Ingrese el número de segundos ");
+	scanf("%f",&segundos);
+	
+	dias=(int)segundos/86400;
+	resto=(int)segundos%86400;
+	horas=(int)resto/3600;
+	resto=(int)resto%3600;
+	minutos=(int)resto/60;
+	segundos=(int)resto%60;
+		
+	
+	printf("Son %f dias, %f horas, %f minutos y %f segundos",dias,horas,minutos,segundos);
+}
