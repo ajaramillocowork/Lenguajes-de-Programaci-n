@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void main(){
+	char codigo;
+	int precio;
+	int cantidad;
+	int descuento;
+	int limite = 7;
+	int precioTotal;
+	int cifraDescuento;
+	int cifraIVA;
+
+	while(limite > 6){
+		printf("Ingrese el código del producto");
+		scanf("%char", &codigo);
+		limite = sizeof(codigo);
+		if(limite>6){
+			printf("El código debe tener 6 o menos cifras");
+		}
+	}
+	
+	printf("Ingrese el precio del producto");
+	scanf("%i", &precio);
+	
+	printf("Ingrese la cantidad de articulos que desea");
+	scanf("%i", &cantidad);
+	
+	precioTotal=cantidad*precio;
+	
+	printf("Ingrese el descuento");
+	scanf("%i", &descuento);
+	
+	cifraDescuento=(descuento/100)*precio;
+	cifraIVA=precio*0,19;
+	precioTotal=precio-cifraDescuento+cifraIVA;
+	
+	printf("---- LOS PEQUES ---- \n");
+	printf("%i + || + %i \n", codigo, precio);
+	printf("%i + || + %i \n", cantidad, precioTotal);
+	printf("%i + || + %i \n", descuento, cifraDescuento);
+	printf("19% IVA|| + %i \n", cifraIVA);
+	printf("%i + || + %i \n", codigo, precio);
+	printf("TOTAL || + %i", precioTotal);
+
+}
