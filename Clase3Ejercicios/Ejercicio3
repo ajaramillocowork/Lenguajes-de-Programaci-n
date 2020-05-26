@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+void main(){
+	float valorEuro=0.92;
+	float numeroDolares;
+	float total;
+	
+	printf("Ingrese el numero de dolares ");
+	scanf("%f",&numeroDolares);
+	
+	total=valorEuro*numeroDolares;	
+	
+	printf("El valor en euros es de %f",total);
+}
