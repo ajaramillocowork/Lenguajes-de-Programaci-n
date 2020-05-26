@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+void main(){
+	float pi=3.1416;
+	float radio;
+	float perimetro;
+	float area;
+	float volumen;
+	
+	printf("Ingrese el radio ");
+	scanf("%f",&radio);
+	
+	perimetro=2*pi*radio;
+	area=pi*pow(radio,2);
+	volumen=(3*pi*pow(radio,3))/4;	
+	
+	printf("El valor del perimetro es de %f, el del area %f y el del volumen %f",perimetro,area,volumen);
+}
